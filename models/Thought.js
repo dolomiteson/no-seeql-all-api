@@ -1,5 +1,5 @@
 const { Schema, model } = require('mongoose');
-const reactionSchema = require('./Note');
+const reactionSchema = require('./Reaction');
 const { get } = require('./Reaction');
 
 
