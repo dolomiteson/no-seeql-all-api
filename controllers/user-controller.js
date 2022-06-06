@@ -71,9 +71,9 @@ const userController = {
                     return;
                 }
                 return User.findOneAndUpdate(
-                    {_id: params.userId}, 
-                    { $push: { friends: dbFriendData._id}}, 
-                    { new: true});
+                    { _id: params.userId },
+                    { $push: { friends: dbFriendData._id } },
+                    { new: true });
             })
             .then(dbUserData => {
                 // If no User is found, send 404
@@ -90,7 +90,26 @@ const userController = {
     },
 
     // delete friend from user
-    deleteFriend(){}
+    deleteFriend({ params }, res) {
+        // Get User
+        User.findOneAndUpdate(
+            { _id: params.userId },
+            { $pull: { friends: params.friendId } },
+            { new: true }
+        )
+        // Match existing Friend
+        .then(dbUserData => {
+            if (!dbUserData) {
+                res.status(404).json({ message: 'No User found with this id, cannot remove friends!' });
+                return;
+            }
+            res.json(dbUserData);
+        })
+        .catch(err => {
+            console.log(err);
+            res.status(400).json(err);
+        });
+    }
 }
 
 module.exports = userController;
