@@ -1,4 +1,4 @@
-const { User } = require('../models');
+const { User, Thought } = require('../models');
 
 const userController = {
     // get all Users
@@ -57,7 +57,15 @@ const userController = {
                     return;
                 }
                 res.json(dbUserData);
+                return Thought.deleteMany({username: dbUserData.username})
             })
+            // .then(dbUserData => {
+                // if (!dbUserData) {
+                //     res.status(404).json({ message: 'No User found with this id!' });
+                //     return;
+                // }
+                // res.json(dbUserData);
+            // })
             .catch(err => res.status(400).json(err));
     },
 
@@ -97,18 +105,18 @@ const userController = {
             { $pull: { friends: params.friendId } },
             { new: true }
         )
-        // Match existing Friend
-        .then(dbUserData => {
-            if (!dbUserData) {
-                res.status(404).json({ message: 'No User found with this id, cannot remove friends!' });
-                return;
-            }
-            res.json(dbUserData);
-        })
-        .catch(err => {
-            console.log(err);
-            res.status(400).json(err);
-        });
+            // Match existing Friend
+            .then(dbUserData => {
+                if (!dbUserData) {
+                    res.status(404).json({ message: 'No User found with this id, cannot remove friends!' });
+                    return;
+                }
+                res.json(dbUserData);
+            })
+            .catch(err => {
+                console.log(err);
+                res.status(400).json(err);
+            });
     }
 }
 

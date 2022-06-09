@@ -65,7 +65,7 @@ const thoughtController = {
     // delete Thought
     deleteThought({ params }, res) {
         Thought.findOneAndDelete({ _id: params.id })
-            .then(({username}) => {
+            .then(({ username }) => {
                 return User.findOneAndUpdate(
                     { username: username },
                     { $pull: { thoughts: params.id } },
