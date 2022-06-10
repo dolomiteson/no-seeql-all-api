@@ -87,57 +87,39 @@ const thoughtController = {
     addReaction({ params, body }, res) {
         Thought.findOneAndUpdate(
             { _id: params.thoughtId },
-            { $addToSet: { reactions: body }},
+            { $addToSet: { reactions: body } },
             { runValidators: true, new: true }
         )
-        .then(dbThoughtData => {
-            if (!dbThoughtData){
-                return res.status(404).json({ message: 'No Thought with this id!' });
-            }
-            res.json(dbThoughtData);
-        })
-        .catch(err => {
-            console.log(err);
-            res.status(500).json(err);
-        });
+            .then(dbThoughtData => {
+                if (!dbThoughtData) {
+                    return res.status(404).json({ message: 'No Thought with this id!' });
+                }
+                res.json(dbThoughtData);
+            })
+            .catch(err => {
+                console.log(err);
+                res.status(500).json(err);
+            });
     },
 
     // delete reaction from thought
-    deleteReaction({ params, body }, res){
+    deleteReaction({ params, body }, res) {
         Thought.findOneAndUpdate(
             { _id: params.thoughtId },
-            { $pull: {reactions: {reactionId: params.reactionId }}},
+            { $pull: { reactions: { reactionId: params.reactionId } } },
             { runValidators: true, new: true }
         )
-        .then(dbThoughtData => {
-            if (!dbThoughtData){
-                return res.status(404).json({ message: 'No Thought with this id!' });
-            }
-            res.json(dbThoughtData);
-        })
-        .catch(err => {
-            console.log(err);
-            res.status(500).json(err);
-        });
+            .then(dbThoughtData => {
+                if (!dbThoughtData) {
+                    return res.status(404).json({ message: 'No Thought with this id!' });
+                }
+                res.json(dbThoughtData);
+            })
+            .catch(err => {
+                console.log(err);
+                res.status(500).json(err);
+            });
     }
-//   // Delete a note from a notebook
-//   app.delete('/api/notebooks/:notebookId/notes/:noteId', (req, res) => {
-//     Notebook.findOneAndUpdate(
-//       { _id: req.params.notebookId },
-//       { $pull: { notes: { noteId: req.params.noteId } } },
-//       { runValidators: true, new: true }
-//     )
-//       .then(dbNotebookData => {
-//         if (!dbNotebookData) {
-//           return res.status(404).json({ message: 'No notebook with this id!' });
-//         }
-//         res.json(dbNotebookData);
-//       })
-//       .catch(err => {
-//         console.log(err);
-//         res.status(500).json(err);
-//       });
-//   });
 };
 
 module.exports = thoughtController;
