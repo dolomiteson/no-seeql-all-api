@@ -14,13 +14,13 @@ const thoughtController = {
     // get one Thought by id
     getThoughtById({ params }, res) {
         Thought.findOne({ _id: params.id })
-            .then(dbUserData => {
+            .then(dbThoughtData => {
                 // If no Thought is found, send 404
-                if (!dbUserData) {
+                if (!dbThoughtData) {
                     res.status(404).json({ message: 'No Thought found with this id!' });
                     return;
                 }
-                res.json(dbUserData);
+                res.json(dbThoughtData);
             })
             .catch(err => {
                 console.log(err);
@@ -52,12 +52,12 @@ const thoughtController = {
     // update Thought by id
     updateThought({ params, body }, res) {
         Thought.findOneAndUpdate({ _id: params.id }, body, { new: true })
-            .then(dbUserData => {
-                if (!dbUserData) {
-                    res.status(404).json({ message: 'No User found with this id!' });
+            .then(dbThoughtData => {
+                if (!dbThoughtData) {
+                    res.status(404).json({ message: 'No Thought found with this id!' });
                     return;
                 }
-                res.json(dbUserData);
+                res.json(dbThoughtData);
             })
             .catch(err => res.status(400).json(err));
     },
