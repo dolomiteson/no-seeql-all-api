@@ -41,8 +41,10 @@ https://user-images.githubusercontent.com/17627005/173239879-477dc79f-1f24-4b6e-
 
 <br><br><br>
   * THOUGHT VIDEOS
- 
+
 https://user-images.githubusercontent.com/17627005/173240155-b95bd5f5-2857-411b-87c3-4dd10800ac6b.mp4
+
+https://user-images.githubusercontent.com/17627005/173240530-b9a79ee5-4048-48c7-9348-f1327e365470.mp4
 
 ## Table of Contents
 
