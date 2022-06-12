@@ -38,6 +38,8 @@ https://user-images.githubusercontent.com/17627005/173239652-335d4ec3-17e6-4271-
 
 https://user-images.githubusercontent.com/17627005/173239879-477dc79f-1f24-4b6e-81d0-725186179f09.mp4
 
+  * THOUGHT VIDEOS
+ 
 https://user-images.githubusercontent.com/17627005/173240155-b95bd5f5-2857-411b-87c3-4dd10800ac6b.mp4
 
 ## Table of Contents
