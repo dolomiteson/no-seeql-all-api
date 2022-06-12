@@ -27,6 +27,11 @@ data:
     * DELETE Reaction
 
 <br><br><br>
+   * Startup
+
+https://user-images.githubusercontent.com/17627005/173242153-5a538dcd-a11b-497f-86be-cf1b683c71ce.mp4
+
+<br><br><br>
    * USER VIDEOS
   
 https://user-images.githubusercontent.com/17627005/173238204-d213dcd3-e8b9-49ae-bb3d-dbe4a7f915b7.mp4
