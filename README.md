@@ -95,5 +95,5 @@ https://user-images.githubusercontent.com/17627005/173241680-cb9276e8-f48b-4844-
 
 ## Questions
 1. Lucas Zimmerman
-[GITHUB](URL dolomiteson: github.com/dolomiteson)
+[GITHUB](github.com/dolomiteson)
 [EMAIL](mailto:zimmerman.lucas@hotmail.com)
