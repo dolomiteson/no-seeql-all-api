@@ -8,11 +8,13 @@
 This application uses MongoDB along with Mongoose to allow users to make API calls. Following the MVC
 framework to keep the project organized; Using CRUD actions. The user is able to maintain the following
 data:
+
+https://user-images.githubusercontent.com/17627005/173238204-d213dcd3-e8b9-49ae-bb3d-dbe4a7f915b7.mp4
+
   * User
     * GET ALL
     * GET ONE
     * POST
-https://user-images.githubusercontent.com/17627005/173238204-d213dcd3-e8b9-49ae-bb3d-dbe4a7f915b7.mp4
     * PUT
     * DELETE
     * POST FRIEND
