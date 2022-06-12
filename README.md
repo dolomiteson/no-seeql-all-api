@@ -26,7 +26,19 @@ data:
     * POST Reaction
     * DELETE Reaction
 
-<br><br><br>
+## Table of Contents
+
+* [Videos](#videos)
+* [Installation](#installation)
+* [Usage](#usage)
+* [License](#license)
+* [Contributing](#contributing)
+* [Questions](#questions)
+
+
+
+## Videos
+
    * Startup
 
 https://user-images.githubusercontent.com/17627005/173242153-5a538dcd-a11b-497f-86be-cf1b683c71ce.mp4
@@ -61,15 +73,6 @@ https://user-images.githubusercontent.com/17627005/173241529-71389f2e-6588-4dd4-
   * USER_THOUGHT VIDEOS
 
 https://user-images.githubusercontent.com/17627005/173241680-cb9276e8-f48b-4844-bd10-17a5e65696d5.mp4
-
-## Table of Contents
-
-* [Installation](#installation)
-* [Usage](#usage)
-* [License](#license)
-* [Contributing](#contributing)
-* [Tests](#tests)
-* [Questions](#questions)
 
 ## Installation
 1. Clone repository
