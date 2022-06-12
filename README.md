@@ -12,6 +12,7 @@ data:
     * GET ALL
     * GET ONE
     * POST
+https://user-images.githubusercontent.com/17627005/173238204-d213dcd3-e8b9-49ae-bb3d-dbe4a7f915b7.mp4
     * PUT
     * DELETE
     * POST FRIEND
