@@ -50,6 +50,11 @@ https://user-images.githubusercontent.com/17627005/173241245-9a47435f-0039-4eb3-
 
 https://user-images.githubusercontent.com/17627005/173241529-71389f2e-6588-4dd4-865a-d0da0b443aa4.mp4
 
+<br><br><br>
+  * USER_THOUGHT VIDEOS
+
+https://user-images.githubusercontent.com/17627005/173241680-cb9276e8-f48b-4844-bd10-17a5e65696d5.mp4
+
 ## Table of Contents
 
 * [Installation](#installation)
