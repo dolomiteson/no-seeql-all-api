@@ -12,7 +12,6 @@ data:
     * GET ALL
     * GET ONE
     * POST
-[POST/GET](./obj-evidence/user/POST_GET.USER.mp4)
     * PUT
     * DELETE
     * POST FRIEND
